@@ -1,0 +1,1 @@
+console.log("HEY THIS IS EXTERNAL JS IMPLE")

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //............................📌📌📌📌📌IMPLICITE TYPE CASTING📌📌📌📌📌..........................
+        var a="string";
+        var b=10;
+        console.log(typeof (a+b));       //string
+        console.log(10 +10);             //20
+        console.log(true+10);             //11
+        console.log("true"+true);        //truetrue
+        console.log("true"-1);           //NaN
+        console.log(false-3);            //-3
+        console.log("55"-true);         //54
+        console.log("56"-"ab");         //NaN
+        console.log(('hello')?"true":"false");     //true
+
+        //................................📌📌📌📌📌EXPLICITE TYPE CASTING📌📌📌📌📌...............................
+        console.log("55"+55);              //5555
+        console.log(Number("55")+55);      //110
+        console.log(Boolean("true")+2);     //3
+        console.log(Boolean("hello")-1);     //0
+        console.log(String(false)+5);       //false5
+        console.log(Boolean(1)+"true");     //truetrue
+        console.log(null+10);                //10
+        console.log(Boolean(null)+4);       //4
+        console.log(Number(20>10));         //1
+    </script>
+</body>
+</html>

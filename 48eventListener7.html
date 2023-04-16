@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" value="lets try to copy me " oncopy="getCopy()" onpaste="getPaste()" oncut="getCut()">
+    <p id="print"></p>
+
+    <script>
+//................................📌📌📌📌📌 oncopy() 📌📌📌📌📌.........................................
+
+        function getCopy() {
+            // let pri= document.getElementById("print")
+            // pri.innerHTML="your text is copied"
+            // pri.style.fontSize="40px"
+            // pri.style.color="red"
+
+            alert("your text is copied")   
+        }
+
+//................................📌📌📌📌📌 onpaste() 📌📌📌📌📌.........................................
+
+        function getPaste() {
+            // let pri= document.getElementById("print")
+            // pri.innerHTML="your text is pasted"
+            // pri.style.fontSize="40px"
+            // pri.style.color="red"
+
+            alert("your text is pasted")   
+        }
+
+//................................📌📌📌📌📌 oncut() 📌📌📌📌📌.........................................
+
+        function getCut() {
+            // let pri= document.getElementById("print")
+            // pri.innerHTML="your text is cut"
+            // pri.style.fontSize="40px"
+            // pri.style.color="red"
+
+            alert("your text is cut ")   
+        }
+    </script>
+</body>
+</html>

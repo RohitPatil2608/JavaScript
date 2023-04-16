@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- ...............................📌📌📌📌📌 onsubmit() 📌📌📌📌📌................................... -->
+
+    <form action="" onsubmit="getSubmit()">
+        <input type="text" id="input1" placeholder="name">
+        <input type="email" name="" id="input2" placeholder="mail">
+        <button type="submit"> SUBMIT </button>
+    </form>
+
+    <script>
+        function getSubmit() {
+            let input1= document.getElementById("input1").value;
+            let input2= document.getElementById("input2").value;
+            if(input1=="Rohit" && input2=="rp26082000@gmail.com"){
+                alert("your form was successfully submitted ")
+            }
+            else{
+                alert("please enter correct details")
+            }   
+        }
+    </script>
+    
+</body>
+</html>

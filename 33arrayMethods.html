@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // .........................📌📌📌📌📌 ARRAY METHODS 📌📌📌📌📌................................
+
+        let arrMethod=[10,20,30,40,50]
+        console.log(arrMethod);
+
+        //.............................push()................................
+        // it is used to add multiple elements from last index
+        // we can add multiple elements simultaneously
+
+        // arrMethod.push("hello",true,false,{name:"gotya"})
+        // console.log(arrMethod);
+
+
+        //..............................pop()................................
+        // it is used to delete an element from last index.
+        //It will returns us deleted element.
+        // only single element we can delete simultaneously
+
+        // console.log(arrMethod.pop());
+        // console.log(arrMethod);
+
+
+        // ............................unshift()...............................
+        // it is used to add multiple elements from start index
+        // we can add multiple elements simultaneously
+
+        // console.log(arrMethod.unshift("hello",true,"bye"));
+        // console.log(arrMethod);
+
+
+
+        // ............................shift()...................................
+        //it is used to delete an element from start index
+        //It will returns us deleted element.
+        // only single element we can delete simultaneously
+
+        // console.log(arrMethod.shift());
+        // console.log(arrMethod);
+
+
+        //.................................reverse()..............................
+        //it is used to reverse an array
+        // console.log(arrMethod.reverse());
+
+
+        //..................................sort().................................
+        // let sort1=[10,10,1000,100,40,90,60,50,"apple","banana","mango"]
+        // console.log(sort1.sort());
+
+
+        //................................indexOf().............................
+        //it is used to check the index of an element
+
+        // let arrMeth=[10,20,30,40,50,60]
+        // console.log(arrMeth.indexOf(50));
+
+
+        //.................................includes().........................
+        //it is used to check the element is present or not in the form of boolean
+
+        // let arrMeth=[10,20,30,40,50,60]
+        // console.log(arrMeth.includes(50));
+
+        //...................................slice()..........................
+        //it will split array from start index to (last index-1) index.....last index not included....and return
+
+        //  let arrMeth=[10,20,30,40,50,60]
+        //  console.log(arrMeth.slice(2,5));
+
+
+        //.....................................splice()................................
+        //it is used to delete elements from start index upto count mentioned and after it will add new elements given
+
+        // let arrMeth=[10,20,30,40,50,60]
+        // console.log(arrMeth.splice(2,3,"hello",true));
+        // console.log(arrMeth);
+
+
+        //.................................filter().............................
+        //used to filter out specific type of data
+
+        // let age=[1,2,3,4,5,6,7,8,9,10,11,12,13];
+        // let a=age.filter((age)=>{
+        //     return(age>1 && age<5)
+        // })
+        // console.log(a);
+
+        //....................................map().....................................
+        let age=[1,2,3,4,5,6,7,8,9,10,11,12,13]
+        let map1=age.map((age)=>{
+            // return(String(age))
+            // return(Math.sqrt(age))
+            return(Math.pow(age,4))
+        })
+        console.log(map1);
+        
+    </script>
+</body>
+</html>

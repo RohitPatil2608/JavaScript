@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //.....................📌📌📌📌📌OBJECT USING FUNCTION CONSTRUCTOR📌📌📌📌📌..........................
+
+    function Emp(ename,eid,esal,eadhar){
+        this.ename=ename;
+        this.eid=eid;
+        this.esal=esal;
+        this.eadhar=eadhar;
+        this.getDetails=function(){
+            return "emp name is "+this.ename + " emp id is "+this.eid +" emp sal is "+this.esal; +" emp adhar is "+ this.eadhar
+        }
+    }
+
+    let emp1=new Emp("amar","xyz123",99999,44444);
+    console.log(emp1);              
+    let emp2=new Emp("akbar","abc345",8888,6666);
+    console.log(emp2);
+
+    console.log(emp2.ename);
+    emp2.ename="anthony";
+    console.log(emp2);
+
+    console.log(emp2.getDetails());
+
+    </script>
+</body>
+</html>

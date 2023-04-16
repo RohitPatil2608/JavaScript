@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let GokulDham = [["welcome to b2"], ["welcome to b1"], [{ ownerName: "jethalal", cno: 12345 }, { ownerName: "mehta", cno: 12346 }, { ownerName: "popatlal", cno: 12347 }, { ownerName: "babitaji", cno: 12348 }]]
+        // console.log(GokulDham[prompt("enter floor no")][prompt("enter flat no")]);
+
+        GokulDham[2][0].ownerName = "daya bhabhi"             //update value
+        console.log(GokulDham);
+
+        GokulDham[2][0] = { ownerName: "tappu", cno: 12345 }       //update value
+        console.log(GokulDham);
+
+        delete (GokulDham[2][0].ownerName)           //delete value
+        console.log(GokulDham);
+    </script>
+</body>
+
+</html>

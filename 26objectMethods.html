@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //................📌📌📌📌📌 add()  delete()  keys()  values()  entries()  seal()  freeze()  assign() 📌📌📌📌📌...............
+
+        let obj={
+            key1:"value1",
+            key2:"value2",
+            key3:"value3",
+            key4:"value4"
+        }
+        console.log(obj);
+
+        //........add()
+        obj.key5="value5"
+        console.log(obj);
+
+
+        //......delete()
+        delete(obj.key5);
+        console.log(obj);
+
+
+        //......keys()
+        console.log(Object.keys(obj));
+
+
+        //......values()
+        console.log(Object.values(obj));
+
+
+        //......entries()
+        console.log(Object.entries(obj));
+
+
+        //......seal()
+        console.log(Object.seal(obj));
+        console.log(obj.key5="value5"); //we can not add new value
+        console.log(obj);
+        console.log(obj.key3="updated key");
+        console.log(obj); //we can modify existing value
+
+
+        //.........freeze()
+        console.log(Object.freeze(obj));
+        console.log(obj.key5="value5"); //we can not add new value
+        console.log(obj);
+        console.log(obj.key4="updated");
+        console.log(obj); //we can not modify existing value
+
+
+        //.........assign()
+        let obj1={
+            key6:"value6",
+            key7:"value7"
+        }
+        let obj2={
+            key8:"value8",
+            key9:"value9"
+        }
+        console.log(Object.assign(obj1,obj2));    //avoid duplicate values otherwise it will update the previous value in output console
+    </script>
+</body>
+</html>
